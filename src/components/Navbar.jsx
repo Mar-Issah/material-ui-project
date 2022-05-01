@@ -1,42 +1,11 @@
-import { Box, AppBar, Toolbar, styled, Typography, InputBase, Badge, Avatar } from '@mui/material';
+import { AppBar, Typography, InputBase, Badge, Avatar } from '@mui/material';
 import LocalFloristIcon from '@mui/icons-material/LocalFlorist';
 import { Mail, Notifications } from '@mui/icons-material';
+import { StyledToolbar, IconsContainer, Search, UserContainer } from '../styled/Navbar';
+
 const Navbar = () => {
   //my own styles
-  const StyledToolbar = styled(Toolbar)({
-    display: 'flex',
-    justifyContent: 'space-between',
-  });
 
-  //when on desktop screen and up display flex when on mobile screen and down display none
-  const IconsContainer = styled(Box)(({ theme }) => ({
-    display: 'none',
-    gap: '20px',
-    alignItems: 'center',
-    [theme.breakpoints.up('sm')]: {
-      display: 'flex',
-    },
-  }));
-  const Search = styled(Toolbar)(({ theme }) => ({
-    backgroundColor: 'white',
-    padding: '0 10px',
-    //default them borderRadius
-    borderRadius: theme.shape.borderRadius,
-    width: '40vw',
-    minHeight: '15px !important',
-  }));
-
-  //with styled component we cld use props with SearchCon
-  //this is how to use breakpoint in css
-  //when on mobile screen and up display none display flex when on mobile screen and down
-  const UserContainer = styled(Box)(({ theme }) => ({
-    display: 'flex',
-    gap: '10px',
-    alignItems: 'center',
-    [theme.breakpoints.up('sm')]: {
-      display: 'none',
-    },
-  }));
   return (
     <AppBar position='sticky'>
       <StyledToolbar>
