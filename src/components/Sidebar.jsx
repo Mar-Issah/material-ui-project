@@ -4,7 +4,8 @@ import { Home, Article, Groups, Person, Settings, AccountBox, Storefront, DarkMo
 const Sidebar = () => {
   return (
     <Box flex={1} sx={{ display: { xs: 'none', sm: 'block' } }}>
-      <nav>
+      <nav style={{ position: 'fixed' }}>
+        {/* we could also use box wit sx position fix to fix it */}
         <List>
           <ListItem disablePadding>
             <ListItemButton component='a' href='#home'>
