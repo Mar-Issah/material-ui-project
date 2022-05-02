@@ -1,8 +1,14 @@
 import { Box } from '@mui/material';
+import Post from './Post';
+
 const Feed = () => {
+  //we can pass in title, image, text etc in the Post as props
   return (
-    <Box bgcolor='blue' flex={4} p={2}>
-      Feed
+    <Box flex={4} p={2}>
+      <Post />
+      <Post />
+      <Post />
+      <Post />
     </Box>
   );
 };
