@@ -13,5 +13,6 @@ export const theme = createTheme({
     // myColor: {
     //   main: '#32a8a0',
     // },
+    //mode: 'dark',
   },
 });

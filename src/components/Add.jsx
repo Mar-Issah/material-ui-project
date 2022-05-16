@@ -15,7 +15,7 @@ export const UserContainer = styled(Box)(({ theme }) => ({
 }));
 //my custom Modal by default it is closed ie setOpen to false
 //on click of the tooltip btn it's set open to true
-//
+
 const Add = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -27,7 +27,7 @@ const Add = () => {
       </Tooltip>
 
       <MyModal open={open} onClose={() => setOpen(false)} aria-labelledby='modal-modal-title' aria-describedby='modal-modal-description'>
-        <Box width={300} height={300} bgcolor='#f2f2f2' p={3} borderRadius={3}>
+        <Box width={300} height={300} p={3} borderRadius={3} bgcolor={'background.default'} text={'text.primary'}>
           <Typography variant='h6' color='gray' textAlign='center'>
             Create post
           </Typography>
