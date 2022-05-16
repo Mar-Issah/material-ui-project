@@ -24,7 +24,7 @@ export const Search = styled(Toolbar)(({ theme }) => ({
   minHeight: "15px !important",
 }));
 
-//with styled component we cld use props with SearchCon
+//with styled component we could use props with SearchCon
 //this is how to use breakpoint in css
 //when on mobile screen and up display none display flex when on mobile screen and down
 export const UserContainer = styled(Box)(({ theme }) => ({
