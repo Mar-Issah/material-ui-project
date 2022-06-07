@@ -41,7 +41,7 @@ const Post = () => {
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="Add to favorites">
           {/* <Favorite /> */}
           <Checkbox
             icon={<FavoriteBorder />}
